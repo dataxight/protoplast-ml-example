@@ -1,0 +1,52 @@
+site_name: protoplast-ml-example
+repo_url: https://github.com/dataxight/protoplast-ml-example
+site_url: https://dataxight.github.io/protoplast-ml-example
+site_description: protoplast ml examples
+site_author: michael pan
+edit_uri: edit/main/docs/
+repo_name: dataxight/protoplast-ml-example
+copyright: Maintained by <a href="https://dataxight.com">dataxight</a>.
+
+nav:
+  - Home: index.md
+  - Modules: modules.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: ["src/protoplast_ml"]
+theme:
+  name: material
+  feature:
+    tabs: true
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/dataxight/protoplast-ml-example
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/protoplast-ml-example
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true

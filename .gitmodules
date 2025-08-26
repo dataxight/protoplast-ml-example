@@ -1,0 +1,9 @@
+[submodule "submodules/protoplast"]
+	path = submodules/protoplast
+	url = git@github.com:dataxight/protoplast.git
+[submodule "submodules/tabnet"]
+	path = submodules/tabnet
+	url = git@github.com:dreamquark-ai/tabnet.git
+[submodule "submodules/SIMS"]
+	path = submodules/SIMS
+	url = https://github.com/dataxight/SIMS
