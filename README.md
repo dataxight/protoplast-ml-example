@@ -13,16 +13,18 @@ protoplast ml examples
 
 ## Getting started with your project
 
-### 1. Create a New Repository
+### 1. Clone the repository
 
 First, create a repository on GitHub with the same name as this project, and then run the following commands:
 
-```bash
-git init -b main
-git add .
-git commit -m "init commit"
-git remote add origin git@github.com:dataxight/protoplast-ml-example.git
-git push -u origin main
+```
+git clone git@github.com:dataxight/protoplast-ml-example.git
+```
+
+Get the submodules
+```
+git submodule init
+git submodule update
 ```
 
 ### 2. Set Up Your Development Environment
@@ -35,12 +37,12 @@ make install
 
 This will also generate your `uv.lock` file
 
-### 3. Run the pre-commit hooks
 
-Initially, the CI/CD pipeline might be failing due to formatting issues. To resolve those run:
+### 3. Development
 
-```bash
-uv run pre-commit run -a
+Edit the code in scripts/example.py, then run it
+```
+uv run python scripts/example.py
 ```
 
 ### 4. Commit the changes
@@ -49,9 +51,10 @@ Lastly, commit the changes made by the two steps above to your repository.
 
 ```bash
 git add .
-git commit -m 'Fix formatting issues'
-git push origin main
+git commit -m $MESSAGE
+git push origin $BRANCH
 ```
+
 
 You are now ready to start development on your project!
 The CI/CD pipeline will be triggered when you open a pull request, merge to main, or when you create a new release.
