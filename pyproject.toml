@@ -20,6 +20,7 @@ classifiers = [
 dependencies = [
     "anndata>=0.10.9",
     "boto3>=1.40.17",
+    "marimo>=0.15.0",
     "pytorch-lightning>=2.5.3",
     "ray>=2.48.0",
     "scikit-learn>=1.6.1",
@@ -144,4 +145,3 @@ skip_empty = true
 [tool.coverage.run]
 branch = true
 source = ["src"]
-
