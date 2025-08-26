@@ -34,7 +34,12 @@ tabnet = { path = "submodules/tabnet" }
 SIMS = { path = "submodules/SIMS" }
 
 
-
+[tool.marimo.runtime]
+pythonpath = [
+  "submodules/protoplast/src",
+  "submodules/tabnet",
+  "submodules/SIMS"
+]
 
 
 [project.urls]
