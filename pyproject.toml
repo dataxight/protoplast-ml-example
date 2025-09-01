@@ -18,20 +18,23 @@ classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 dependencies = [
-    "anndata>=0.10.9",
-    "boto3>=1.40.17",
+    "anndata",
+    "boto3",
     "marimo>=0.15.0",
-    "pytorch-lightning>=2.5.3",
-    "ray>=2.48.0",
-    "scikit-learn>=1.6.1",
-    "torch>=2.8.0",
-    "torchmetrics>=1.8.1",
+    "protoplast",
+    "sims",
 ]
 
 [tool.uv.sources]
-protoplast = { path = "submodules/protoplast" }
 tabnet = { path = "submodules/tabnet" }
-SIMS = { path = "submodules/SIMS" }
+protoplast = { workspace = true }
+sims = { workspace = true }
+
+[tool.uv.workspace]
+members = [
+    "submodules/protoplast",
+    "submodules/SIMS",
+]
 
 
 [tool.marimo.runtime]
