@@ -34,6 +34,7 @@ sims = { workspace = true }
 members = [
     "submodules/protoplast",
     "submodules/SIMS",
+    "submodules/tabnet",
 ]
 
 
