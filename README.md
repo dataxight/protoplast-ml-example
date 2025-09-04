@@ -27,6 +27,10 @@ git submodule init
 git submodule update
 ```
 
+Opening up the workspace
+`uv run marimo edit notebooks/`
+You can commit the marimo python files directly after you finished your development
+
 ### 2. Set Up Your Development Environment
 
 Then, install the environment and the pre-commit hooks with
