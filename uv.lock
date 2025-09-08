@@ -1990,7 +1990,7 @@ wheels = [
 
 [[package]]
 name = "protoplast"
-version = "0.1.0"
+version = "0.0.1"
 source = { editable = "submodules/protoplast" }
 dependencies = [
     { name = "anndata" },
@@ -2016,6 +2016,21 @@ test = [
     { name = "ty" },
 ]
 
+[package.dev-dependencies]
+dev = [
+    { name = "deptry" },
+    { name = "mypy" },
+    { name = "pre-commit" },
+    { name = "pytest" },
+    { name = "pytest-cov" },
+]
+docs = [
+    { name = "mkdocs" },
+    { name = "mkdocs-material" },
+    { name = "mkdocstrings" },
+    { name = "mkdocstrings-python" },
+]
+
 [package.metadata]
 requires-dist = [
     { name = "anndata" },
@@ -2037,6 +2052,21 @@ requires-dist = [
     { name = "uritools" },
 ]
 provides-extras = ["test"]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "deptry", specifier = ">=0.23.1" },
+    { name = "mypy", specifier = ">=1.17.1" },
+    { name = "pre-commit", specifier = ">=4.3.0" },
+    { name = "pytest", specifier = ">=8.4.1" },
+    { name = "pytest-cov", specifier = ">=6.2.1" },
+]
+docs = [
+    { name = "mkdocs", specifier = ">=1.6.1" },
+    { name = "mkdocs-material" },
+    { name = "mkdocstrings", specifier = ">=0.30.0" },
+    { name = "mkdocstrings-python", specifier = ">=1.18.2" },
+]
 
 [[package]]
 name = "protoplast-ml-example"
@@ -2358,7 +2388,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "numpy", specifier = ">=1.24,<2.3" },
-    { name = "scikit-learn", specifier = ">=1.7.1" },
+    { name = "scikit-learn", specifier = ">=1.7.0" },
     { name = "scipy", specifier = ">=1.16.0" },
     { name = "torch", specifier = ">=2.8" },
     { name = "tqdm" },
