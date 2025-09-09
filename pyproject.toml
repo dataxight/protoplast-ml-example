@@ -19,6 +19,7 @@ classifiers = [
 ]
 dependencies = [
     "anndata",
+    "arc-state>=0.9.14",
     "boto3",
     "marimo>=0.15.0",
     "protoplast",
