@@ -22,7 +22,8 @@ dependencies = [
     "arc-state>=0.9.14",
     "boto3",
     "ipykernel>=6.30.1",
-    "marimo>=0.15.0",
+    "ipywidgets>=8.1.7",
+    "jupyterlab>=4.4.9",
     "protoplast",
     "scvi-tools>=1.4.0",
     "sims",
@@ -30,8 +31,8 @@ dependencies = [
 
 [tool.uv.sources]
 tabnet = { path = "submodules/tabnet" }
-protoplast = { workspace = true }
 sims = { workspace = true }
+protoplast = { workspace = true }
 
 [tool.uv.workspace]
 members = [
