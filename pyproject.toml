@@ -22,6 +22,8 @@ dependencies = [
     "arc-state>=0.9.14",
     "boto3",
     "ipykernel>=6.30.1",
+    "ipywidgets>=8.1.7",
+    "jupyterlab>=4.4.9",
     "protoplast",
     "scvi-tools>=1.4.0",
     "sims",
