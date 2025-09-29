@@ -26,13 +26,12 @@ dependencies = [
     "ipywidgets>=8.1.7",
     "jupyterlab>=4.4.9",
     "protoplast",
-    "scvi-tools>=1.4.0",
-    "sims",
+    "scvi-tools>=1.4.0"
 ]
 
 [tool.uv.sources]
 tabnet = { path = "submodules/tabnet" }
-sims = { workspace = true }
+sims = { path = "submodules/SIMS" }
 protoplast = { workspace = true }
 
 [tool.uv.workspace]
