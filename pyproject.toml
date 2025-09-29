@@ -1,8 +1,18 @@
 [project]
 name = "protoplast-ml-example"
-version = "0.0.1"
+version = "0.1.0"
 description = "protoplast ml examples"
-authors = [{ name = "michael pan", email = "michael@dataxight.com" }]
+authors = [
+  {name = "DataXight Solutions", email = "solutions@dataxight.com"}
+]
+maintainers = [
+  {name = "Ivy Tran", email="ivy@dataxight.com"},
+  {name = "Tan Phan", email = "tan@dataxight.com"},
+  {name = "Worapol Boontanonda", email = "worapol@dataxight.com"},
+  {name = "Tri Le", email="tri@dataxight.com"},
+  {name = "Nam Phung", email="nam@dataxight.com"},
+  {name = "Michael Pan", email = "michael@dataxight.com"},
+]
 readme = "README.md"
 keywords = ['python']
 requires-python = ">=3.9,<4.0"
@@ -25,19 +35,16 @@ dependencies = [
     "ipykernel>=6.30.1",
     "ipywidgets>=8.1.7",
     "jupyterlab>=4.4.9",
-    "protoplast",
+    "protoplast>=0.1.1",
     "scvi-tools>=1.4.0",
-    "sims",
 ]
 
 [tool.uv.sources]
 tabnet = { path = "submodules/tabnet" }
-sims = { workspace = true }
-protoplast = { workspace = true }
+sims = { path = "submodules/SIMS" }
 
 [tool.uv.workspace]
 members = [
-    "submodules/protoplast",
     "submodules/SIMS",
     "submodules/tabnet",
 ]
@@ -45,7 +52,6 @@ members = [
 
 [tool.marimo.runtime]
 pythonpath = [
-  "submodules/protoplast/src",
   "submodules/tabnet",
   "submodules/SIMS"
 ]
@@ -92,7 +98,6 @@ testpaths = ["tests"]
 pythonpath = [
    "src",
    "tests",
-   "submodules/protoplast/src",
    "submodules/tabnet",
    "submodules/SIMS"
 ]

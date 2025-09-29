@@ -4,21 +4,34 @@ This repository has example notebooks which showcase how you can use PROTOplast 
 
 ## How to set up environment for the notebooks
 
-### Step 1: Clone Github and Protoplast
+### Step 1: Clone the repo
 
 ```bash
-git clone https://github.com/dataxight/protoplast-ml-example
+git clone git@github.com:dataxight/protoplast-ml-example.git
+```
+
+
+### Step 2: Update submodules
+
+We have submoduled TabNet and SIMS, as they require updates due to API changes.  Once these changes have been accepted into their respective repos, the submodules will no longer be necessary
+
+```bash
 cd protoplast-ml-example
-git submodule update --init # Pull the suitable version of PROTOplast
+git submodule init
+git submodule update
 ```
 
-### Step 2: Install Python dependencies
+### Step 3: Setup the environment
 
+We use uv to install all dependencies, including the submodules themselves
 ```bash
-pip install pip uv --upgrade
+uv sync
+uv pip install -e submodules/tabnet
+uv pip install -e submodules/SIMS
 ```
 
-### Step 3: 
+
+### Step 4: 
 
 Start Jupyter Lab
 
@@ -30,6 +43,6 @@ uv run jupyter lab
 
 PROTOplast:
 
-- [Github](https://github.com/dataxight/protoplast)
 - [Website](https://wwww.dataxight.com/services/protoplast)
+- [Github](https://github.com/dataxight/protoplast)
 - [Documentation](https://protoplast.dataxight.com)
