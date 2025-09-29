@@ -28,7 +28,7 @@ We use uv to install all dependencies, including the submodules themselves
 uv sync
 uv pip install -e submodules/tabnet
 uv pip install -e submodules/SIMS
-```bash
+```
 
 
 ### Step 4: 
