@@ -16,12 +16,12 @@ git submodule update --init # Pull the suitable version of PROTOplast
 
 ```bash
 pip install pip uv --upgrade
-uv sync
 ```
 
 ### Step 3: 
 
 Start Jupyter Lab
+
 ```bash
 uv run jupyter lab
 ```
