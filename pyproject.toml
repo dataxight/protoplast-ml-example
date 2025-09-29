@@ -2,7 +2,10 @@
 name = "protoplast-ml-example"
 version = "0.0.1"
 description = "protoplast ml examples"
-authors = [{ name = "michael pan", email = "michael@dataxight.com" }]
+authors = [
+{ name = "Ivy Tran", email = "ivy@dataxight.com" },
+{ name = "michael pan", email = "michael@dataxight.com" }
+]
 readme = "README.md"
 keywords = ['python']
 requires-python = ">=3.9,<4.0"
