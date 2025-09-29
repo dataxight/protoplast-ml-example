@@ -21,6 +21,7 @@ dependencies = [
     "anndata",
     "arc-state>=0.9.14",
     "boto3",
+    "gcsfs>=2025.7.0",
     "ipykernel>=6.30.1",
     "ipywidgets>=8.1.7",
     "jupyterlab>=4.4.9",
