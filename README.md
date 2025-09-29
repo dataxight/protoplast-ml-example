@@ -28,4 +28,8 @@ uv run jupyter lab
 
 ## Resources
 
-- Github: [PROTOplast](https://github.com/dataxight/protoplast)
+PROTOplast:
+
+- [Github](https://github.com/dataxight/protoplast)
+- [Website](https://wwww.dataxight.com/services/protoplast)
+- [Documentation](https://protoplast.dataxight.com)
