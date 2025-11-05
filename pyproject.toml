@@ -36,6 +36,7 @@ dependencies = [
     "ipywidgets>=8.1.7",
     "jupyterlab>=4.4.9",
     "protoplast>=0.1.2",
+    "scvi>=0.6.8",
     "scvi-tools>=1.4.0",
 ]
 
