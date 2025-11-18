@@ -43,6 +43,6 @@ uv run jupyter lab
 
 PROTOplast:
 
-- [Website](https://wwww.dataxight.com/services/protoplast)
+- [Website](https://www.dataxight.com/services/protoplast)
 - [Github](https://github.com/dataxight/protoplast)
 - [Documentation](https://protoplast.dataxight.com)
