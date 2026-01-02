@@ -505,7 +505,7 @@ wheels = [
 
 [[package]]
 name = "cell-eval"
-version = "0.5.43"
+version = "0.6.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "igraph" },
@@ -516,9 +516,9 @@ dependencies = [
     { name = "scanpy" },
     { name = "tqdm" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/d3/0e/0f8265c3db737d5d2ac079dce50fd4ebff23a9195e9533ae0610997bf907/cell_eval-0.5.43.tar.gz", hash = "sha256:8b830384f36dd248d10dda88b3cab86ba3b448ac93c565c8ff559e0ce798dfb0", size = 30908, upload-time = "2025-08-06T17:21:10.375Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/57/ae/97342936d312e3e564348a70fbccbb420e057447c43b72bed2de7a2f1916/cell_eval-0.6.2.tar.gz", hash = "sha256:9dfa5c11e67010f36828cf3c1cce25916e38755f9f86383596773a0233d03d99", size = 31266, upload-time = "2025-10-16T17:18:18.614Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b9/b7/ee302ded745b9b955d562940f93a5ce82842673e8bab2dd95e13a656a6bb/cell_eval-0.5.43-py3-none-any.whl", hash = "sha256:470f4d55f896e1e23115c35ed3224ad81090a098144394a6063130e806bb4ffe", size = 37033, upload-time = "2025-08-06T17:21:09.297Z" },
+    { url = "https://files.pythonhosted.org/packages/5e/93/36e19688095b8488e9b2c6aa53cf633723ac592476044e31e17bee4b9b5b/cell_eval-0.6.2-py3-none-any.whl", hash = "sha256:6e0aeb9730d6738b3695948f1bc0ce2e2dc03b4172ac936b2293aeedfbbfcf65", size = 37352, upload-time = "2025-10-16T17:18:17.114Z" },
 ]
 
 [[package]]
@@ -3442,7 +3442,7 @@ wheels = [
 
 [[package]]
 name = "pdex"
-version = "0.1.24"
+version = "0.1.27"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "adpbulk" },
@@ -3456,9 +3456,9 @@ dependencies = [
     { name = "scipy" },
     { name = "tqdm" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/a6/9d/c4b535a573b39c43abc6366f313862a440ff7248e67279fc1ae7ebbaafd8/pdex-0.1.24.tar.gz", hash = "sha256:fd752be6ebd1dab29de2a6d35e9e6d378efe56bca5b18d0f801544d830d89405", size = 14380, upload-time = "2025-08-25T23:18:02.656Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/5a/ca/b4a52152b3c676d3c974f6910521ebf948b08b612b5409a8b8803732a04f/pdex-0.1.27.tar.gz", hash = "sha256:bcf8499d1d732ff77bf418c4b532e51660100f83134e8a4c47fdc6a06b1fa77f", size = 14458, upload-time = "2025-11-26T20:22:25.065Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/eb/f6/9c7c2216be06f19ec4df8a05558b4fff991d481372825ff663200a8a8b28/pdex-0.1.24-py3-none-any.whl", hash = "sha256:b03e41690dd6f67463a976c0b1a37661bc1e92cc091ba82dcbc9fbafffc20dee", size = 11580, upload-time = "2025-08-25T23:18:01.49Z" },
+    { url = "https://files.pythonhosted.org/packages/aa/8b/ced4e81068ef5bb6d1be9d40878d1adb721ff5e3a4da1875ed0709c1d5b7/pdex-0.1.27-py3-none-any.whl", hash = "sha256:7ff836f0781e9458394f53404842dc73cbab551900772bde1635223431241537", size = 11491, upload-time = "2025-11-26T20:22:23.983Z" },
 ]
 
 [[package]]
@@ -3760,6 +3760,7 @@ dependencies = [
     { name = "anndata" },
     { name = "arc-state" },
     { name = "boto3" },
+    { name = "cell-eval" },
     { name = "dotenv" },
     { name = "gcsfs" },
     { name = "ipykernel" },
@@ -3789,6 +3790,7 @@ requires-dist = [
     { name = "anndata" },
     { name = "arc-state", specifier = ">=0.9.14" },
     { name = "boto3" },
+    { name = "cell-eval", specifier = "==0.6.2" },
     { name = "dotenv", specifier = ">=0.9.9" },
     { name = "gcsfs", specifier = ">=2025.7.0" },
     { name = "ipykernel", specifier = ">=6.30.1" },
