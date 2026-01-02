@@ -31,7 +31,7 @@ dependencies = [
     "anndata",
     "arc-state>=0.9.14",
     "boto3",
-    "cell-eval==0.6.2",
+    "cell-eval==0.6.5",
     "dotenv>=0.9.9",
     "gcsfs>=2025.7.0",
     "ipykernel>=6.30.1",

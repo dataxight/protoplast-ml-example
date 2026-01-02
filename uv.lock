@@ -505,7 +505,7 @@ wheels = [
 
 [[package]]
 name = "cell-eval"
-version = "0.6.2"
+version = "0.6.5"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "igraph" },
@@ -516,9 +516,9 @@ dependencies = [
     { name = "scanpy" },
     { name = "tqdm" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/57/ae/97342936d312e3e564348a70fbccbb420e057447c43b72bed2de7a2f1916/cell_eval-0.6.2.tar.gz", hash = "sha256:9dfa5c11e67010f36828cf3c1cce25916e38755f9f86383596773a0233d03d99", size = 31266, upload-time = "2025-10-16T17:18:18.614Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/73/15/503845b4434075e65a37da0a1e84a5cc631e1fdc76fc01caa2fc84799c7e/cell_eval-0.6.5.tar.gz", hash = "sha256:a525afac7883d02467a82a24777092ffacc5b559c6aa272b50b432d0f9aa43f4", size = 32631, upload-time = "2025-11-08T02:42:34.06Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/5e/93/36e19688095b8488e9b2c6aa53cf633723ac592476044e31e17bee4b9b5b/cell_eval-0.6.2-py3-none-any.whl", hash = "sha256:6e0aeb9730d6738b3695948f1bc0ce2e2dc03b4172ac936b2293aeedfbbfcf65", size = 37352, upload-time = "2025-10-16T17:18:17.114Z" },
+    { url = "https://files.pythonhosted.org/packages/2e/88/b878c40abbd0307200bed8ac823eda8c19701ff47239f53a60767633b03a/cell_eval-0.6.5-py3-none-any.whl", hash = "sha256:a96c4b5644c4406ec85628365aa5f6135d9687c6855a2274eb8e18bbd4bf6bf8", size = 38172, upload-time = "2025-11-08T02:42:32.336Z" },
 ]
 
 [[package]]
@@ -3790,7 +3790,7 @@ requires-dist = [
     { name = "anndata" },
     { name = "arc-state", specifier = ">=0.9.14" },
     { name = "boto3" },
-    { name = "cell-eval", specifier = "==0.6.2" },
+    { name = "cell-eval", specifier = "==0.6.5" },
     { name = "dotenv", specifier = ">=0.9.9" },
     { name = "gcsfs", specifier = ">=2025.7.0" },
     { name = "ipykernel", specifier = ">=6.30.1" },
